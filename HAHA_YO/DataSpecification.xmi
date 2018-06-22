@@ -7,7 +7,7 @@
     <operations xsi:type="processing:PerformDataTransmissionOperation" id="_Owt18nQsEeinoOBpMH07LA" entityName="IStoreManager.createReport"/>
   </dataProcessingContainers>
   <dataProcessingContainers id="_wvqY8HQyEeinoOBpMH07LA" entityName="Ts:Inv:App_Assemble">
-    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_4mX2g3QyEeinoOBpMH07LA" entityName="IStoreQuery.assembleReport"/>
+    <operations xsi:type="processing:CreateDataOperation" id="_N3vAwHXzEeix_s8lkyHMWg" entityName="IStoreInventoryManager.assembleReport"/>
   </dataProcessingContainers>
   <dataProcessingContainers id="_nFUIoHQ0EeinoOBpMH07LA" entityName="Ts:Inv:App_CreateReport">
     <operations xsi:type="processing:PerformDataTransmissionOperation" id="_upzbg3Q5EeinoOBpMH07LA" entityName="IStoreInventoryManager.createReport"/>
