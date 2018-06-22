@@ -103,49 +103,49 @@
   </repository:Repository>
   <emfprofileapplication:ProfileApplication>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification" appliedTo="_O777QHC6Eei11fv97AP7Vg">
-      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#/0/DataSeffSpecification/@extensions.0"/>
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbblZXUTEeiqCpXRWXhBJA"/>
       <dataSeffSpecification href="DataSpecification.xmi#_MNp68nQ6EeinoOBpMH07LA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification" appliedTo="_WyKwR3PyEeinoOBpMH07LA">
-      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#/0/DataSeffSpecification/@extensions.0"/>
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbblZXUTEeiqCpXRWXhBJA"/>
       <dataSeffSpecification href="DataSpecification.xmi#_VY-MEnQbEeinoOBpMH07LA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification" appliedTo="_Xeg453PyEeinoOBpMH07LA">
-      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#/0/DataSeffSpecification/@extensions.0"/>
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbblZXUTEeiqCpXRWXhBJA"/>
       <dataSeffSpecification href="DataSpecification.xmi#_3JwxwnQ2EeinoOBpMH07LA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification" appliedTo="_YT96N3PyEeinoOBpMH07LA">
-      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#/0/DataSeffSpecification/@extensions.0"/>
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbblZXUTEeiqCpXRWXhBJA"/>
       <dataSeffSpecification href="DataSpecification.xmi#_lBODknQsEeinoOBpMH07LA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_L5ZrZnP8EeinoOBpMH07LA">
-      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#/0/DataProcessingSpecification/@extensions.1"/>
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VXUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_MyLssHQsEeinoOBpMH07LA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification">
-      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#/0/DataProcessingSpecification/@extensions.1"/>
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VXUTEeiqCpXRWXhBJA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_G63_GHQAEeinoOBpMH07LA">
-      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#/0/DataProcessingSpecification/@extensions.0"/>
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_wvqY8HQyEeinoOBpMH07LA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_DlOdpnQbEeinoOBpMH07LA">
-      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#/0/DataProcessingSpecification/@extensions.1"/>
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VXUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_iJ8nAHPVEeinoOBpMH07LA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification" appliedTo="_-6bOh3QyEeinoOBpMH07LA">
-      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#/0/DataSeffSpecification/@extensions.0"/>
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbblZXUTEeiqCpXRWXhBJA"/>
       <dataSeffSpecification href="DataSpecification.xmi#_l05-wHQ2EeinoOBpMH07LA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_PnPxLHQzEeinoOBpMH07LA">
-      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#/0/DataProcessingSpecification/@extensions.0"/>
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_nFUIoHQ0EeinoOBpMH07LA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification" appliedTo="_dNh8d3Q6EeinoOBpMH07LA">
-      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#/0/DataSeffSpecification/@extensions.0"/>
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbblZXUTEeiqCpXRWXhBJA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_9dKsvHQ6EeinoOBpMH07LA">
-      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#/0/DataProcessingSpecification/@extensions.0"/>
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_aMwywHQ9EeinoOBpMH07LA"/>
     </stereotypeApplications>
     <importedProfiles nsURI="http://www.palladiosimulator.org/pcm/dataprocessing/profile/0.1/" location="platform:/plugin/org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram"/>
