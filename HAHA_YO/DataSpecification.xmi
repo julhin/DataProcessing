@@ -1,32 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataprocessing:DataSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataprocessing="http://www.palladiosimulator.org/pcm/dataprocessing/0.1/" xmlns:processing="http://www.palladiosimulator.org/pcm/dataprocessing/processing/0.1/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xsi:schemaLocation="http://www.palladiosimulator.org/pcm/dataprocessing/processing/0.1/ http://www.palladiosimulator.org/pcm/dataprocessing/0.1/#//processing http://palladiosimulator.org/PalladioComponentModel/Repository/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//repository">
+<dataprocessing:DataSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:data="http://www.palladiosimulator.org/pcm/dataprocessing/data/0.1/" xmlns:dataprocessing="http://www.palladiosimulator.org/pcm/dataprocessing/0.1/" xmlns:processing="http://www.palladiosimulator.org/pcm/dataprocessing/processing/0.1/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xsi:schemaLocation="http://www.palladiosimulator.org/pcm/dataprocessing/data/0.1/ http://www.palladiosimulator.org/pcm/dataprocessing/0.1/#//data http://www.palladiosimulator.org/pcm/dataprocessing/processing/0.1/ http://www.palladiosimulator.org/pcm/dataprocessing/0.1/#//processing http://palladiosimulator.org/PalladioComponentModel/Repository/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//repository">
   <dataProcessingContainers id="_iJ8nAHPVEeinoOBpMH07LA" entityName="PickUpShop: CreateReport">
-    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_3s0U83QJEeinoOBpMH07LA" entityName="IStockmanagerInterface.createreport"/>
+    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_3s0U83QJEeinoOBpMH07LA" entityName="IStockmanagerInterface.createreport">
+      <inputMappings xsi:type="processing:DataParameterMapping" id="_vAg8UHhgEeieOa1iKavmwQ" data="_ZU5PEHQbEeinoOBpMH07LA">
+        <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+      </inputMappings>
+    </operations>
   </dataProcessingContainers>
   <dataProcessingContainers id="_MyLssHQsEeinoOBpMH07LA" entityName="Webservice:Inventory: CreateReport">
-    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_Owt18nQsEeinoOBpMH07LA" entityName="IStoreManager.createReport"/>
+    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_Owt18nQsEeinoOBpMH07LA" entityName="IStoreManager.createReport">
+      <inputMappings xsi:type="processing:DataParameterMapping" id="_jufcMHhlEeieOa1iKavmwQ" data="_o_774HQsEeinoOBpMH07LA">
+        <parameter href="default.repository#/0/@interfaces__Repository.1/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+      </inputMappings>
+    </operations>
   </dataProcessingContainers>
   <dataProcessingContainers id="_wvqY8HQyEeinoOBpMH07LA" entityName="Ts:Inv:App_Assemble">
-    <operations xsi:type="processing:CreateDataOperation" id="_N3vAwHXzEeix_s8lkyHMWg" entityName="IStoreInventoryManager.assembleReport"/>
+    <operations xsi:type="processing:CreateDataOperation" id="_N3vAwHXzEeix_s8lkyHMWg" entityName="IStoreInventoryManager.assembleReport">
+      <resultingData xsi:type="data:OriginalData" id="_Q1z-oHhoEeieOa1iKavmwQ" entityName="assembleReport_returnValue">
+        <originalType xsi:type="repository:CollectionDataType" href="default.repository#_UxQVvHQkEeinoOBpMH07LA"/>
+      </resultingData>
+    </operations>
   </dataProcessingContainers>
   <dataProcessingContainers id="_nFUIoHQ0EeinoOBpMH07LA" entityName="Ts:Inv:App_CreateReport">
-    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_upzbg3Q5EeinoOBpMH07LA" entityName="IStoreInventoryManager.createReport"/>
+    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_upzbg3Q5EeinoOBpMH07LA" entityName="IStoreInventoryManager.createReport">
+      <inputMappings xsi:type="processing:DataParameterMapping" id="_Bc0bYHhoEeieOa1iKavmwQ" data="_pEoDEHQ2EeinoOBpMH07LA">
+        <parameter href="default.repository#/0/@interfaces__Repository.2/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+      </inputMappings>
+    </operations>
   </dataProcessingContainers>
   <dataProcessingContainers id="_l5xJQHQ5EeinoOBpMH07LA" entityName="Ts:Inv:data">
-    <operations xsi:type="processing:CreateDataOperation" id="_oxoHMHQ5EeinoOBpMH07LA" entityName="IStoreQuery.createReportQuery"/>
+    <operations xsi:type="processing:CreateDataOperation" id="_oxoHMHQ5EeinoOBpMH07LA" entityName="IStoreQuery.createReportQuery">
+      <resultingData xsi:type="data:OriginalData" id="_0fN8gHhnEeieOa1iKavmwQ" entityName="createReportQuery">
+        <originalType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </resultingData>
+    </operations>
   </dataProcessingContainers>
   <dataProcessingContainers id="_aMwywHQ9EeinoOBpMH07LA" entityName="ServiceAdapter.executeQuery">
-    <operations xsi:type="processing:SelectionDataOperation" id="_dv9MuXQ9EeinoOBpMH07LA" entityName="serviceAdapter.executeQuery" inputs="_QbTAEHQ6EeinoOBpMH07LA"/>
-    <operations xsi:type="processing:ProjectionDataOperation" id="_I2B7CHQ-EeinoOBpMH07LA" entityName="serviceAdapter.executeQuery" inputs="_QbTAEHQ6EeinoOBpMH07LA"/>
+    <operations xsi:type="processing:SelectionDataOperation" id="_dv9MuXQ9EeinoOBpMH07LA" entityName="serviceAdapter.executeQuery" inputs="_QbTAEHQ6EeinoOBpMH07LA">
+      <output xsi:type="data:OriginalData" id="_b9MiwHhoEeieOa1iKavmwQ" entityName="executeQueryDataID">
+        <originalType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </output>
+    </operations>
+    <operations xsi:type="processing:ProjectionDataOperation" id="_I2B7CHQ-EeinoOBpMH07LA" entityName="serviceAdapter.executeQuery" inputs="_QbTAEHQ6EeinoOBpMH07LA">
+      <output xsi:type="data:ParameterBasedData" id="_kPESUXhoEeieOa1iKavmwQ" entityName="">
+        <parameter href="default.repository#/0/@interfaces__Repository.4/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+      </output>
+    </operations>
   </dataProcessingContainers>
   <dataSEFFSpecifications id="_VY-MEnQbEeinoOBpMH07LA" entityName="PickUpShop.createReport">
-    <inputData id="_ZU5PEHQbEeinoOBpMH07LA" entityName="PickUpShop.inputData"/>
+    <inputData id="_ZU5PEHQbEeinoOBpMH07LA" entityName="PickUpShop.inputData">
+      <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+    </inputData>
   </dataSEFFSpecifications>
   <dataSEFFSpecifications id="_lBODknQsEeinoOBpMH07LA" entityName="Webservice::Inventory.createReport">
     <inputData id="_o_774HQsEeinoOBpMH07LA" entityName="Webservice::Inventory.inputData"/>
   </dataSEFFSpecifications>
   <dataSEFFSpecifications id="_l05-wHQ2EeinoOBpMH07LA" entityName="Ts::Inv:App.createReport">
-    <inputData id="_pEoDEHQ2EeinoOBpMH07LA" entityName="createReport">
+    <inputData id="_pEoDEHQ2EeinoOBpMH07LA" entityName="TS.createReport">
       <parameter href="default.repository#/0/@interfaces__Repository.1/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
     </inputData>
   </dataSEFFSpecifications>
