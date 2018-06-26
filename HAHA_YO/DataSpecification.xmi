@@ -5,6 +5,12 @@
       <inputMappings xsi:type="processing:DataParameterMapping" id="_vAg8UHhgEeieOa1iKavmwQ" data="_ZU5PEHQbEeinoOBpMH07LA">
         <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
       </inputMappings>
+      <outputMappings xsi:type="processing:DataResultMapping" id="_fxyik3kUEeieOa1iKavmwQ" data="_StPGIHkfEei5_d-4polK5g">
+        <operation href="default.repository#_ZY2fsHCyEei11fv97AP7Vg"/>
+        <receivedData xsi:type="data:OriginalData" id="_StPGIHkfEei5_d-4polK5g" entityName="IStockmanagerInterface.returnValue">
+          <originalType xsi:type="repository:CollectionDataType" href="default.repository#_yrJzHHQjEeinoOBpMH07LA"/>
+        </receivedData>
+      </outputMappings>
     </operations>
   </dataProcessingContainers>
   <dataProcessingContainers id="_MyLssHQsEeinoOBpMH07LA" entityName="Webservice:Inventory: CreateReport">
@@ -12,6 +18,12 @@
       <inputMappings xsi:type="processing:DataParameterMapping" id="_jufcMHhlEeieOa1iKavmwQ" data="_o_774HQsEeinoOBpMH07LA">
         <parameter href="default.repository#/0/@interfaces__Repository.1/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
       </inputMappings>
+      <outputMappings xsi:type="processing:DataResultMapping" id="_DqQu03kiEei5_d-4polK5g">
+        <operation href="default.repository#_TZ4qEHC2Eei11fv97AP7Vg"/>
+        <receivedData xsi:type="data:ResultBasedData" id="_EcVsAnkiEei5_d-4polK5g" entityName="IStoreManager.returnValue">
+          <operation href="default.repository#_TZ4qEHC2Eei11fv97AP7Vg"/>
+        </receivedData>
+      </outputMappings>
     </operations>
   </dataProcessingContainers>
   <dataProcessingContainers id="_wvqY8HQyEeinoOBpMH07LA" entityName="Ts:Inv:App_Assemble">
@@ -26,6 +38,7 @@
       <inputMappings xsi:type="processing:DataParameterMapping" id="_Bc0bYHhoEeieOa1iKavmwQ" data="_pEoDEHQ2EeinoOBpMH07LA">
         <parameter href="default.repository#/0/@interfaces__Repository.2/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
       </inputMappings>
+      <outputMappings xsi:type="processing:DataResultMapping" id="_T26Rs3kkEei5_d-4polK5g"/>
     </operations>
   </dataProcessingContainers>
   <dataProcessingContainers id="_l5xJQHQ5EeinoOBpMH07LA" entityName="Ts:Inv:data">
