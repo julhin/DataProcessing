@@ -13,15 +13,11 @@
     <components__Repository xsi:type="repository:BasicComponent" id="_ZifLkHCsEei11fv97AP7Vg" entityName="Tradingssystem::inventory:app">
       <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Exwx0HCwEei11fv97AP7Vg" entityName="Provided_IStoreInventoryManager_Tradingssystem::inventory:app" providedInterface__OperationProvidedRole="_d7qyUHCsEei11fv97AP7Vg"/>
       <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_H1YT0HCwEei11fv97AP7Vg" entityName="Required_IStoreQuery_Tradingssystem::inventory:data" requiredInterface__OperationRequiredRole="_eAlukHCsEei11fv97AP7Vg"/>
-      <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_Xeg453PyEeinoOBpMH07LA" describedService__SEFF="_RiRg0HC5Eei11fv97AP7Vg">
-        <steps_Behaviour xsi:type="seff:StartAction" id="_GAZT0XQAEeinoOBpMH07LA" entityName="StartTsInvAppAssemble" successor_AbstractAction="_G63_GHQAEeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:StopAction" id="_GmRBAHQAEeinoOBpMH07LA" entityName="EndTsInvAppAssemble" predecessor_AbstractAction="_G63_GHQAEeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:InternalAction" id="_G63_GHQAEeinoOBpMH07LA" entityName="TS::inv:app.assembleReport" predecessor_AbstractAction="_GAZT0XQAEeinoOBpMH07LA" successor_AbstractAction="_GmRBAHQAEeinoOBpMH07LA"/>
-      </serviceEffectSpecifications__BasicComponent>
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_-6bOh3QyEeinoOBpMH07LA" describedService__SEFF="_3RacIHC4Eei11fv97AP7Vg">
         <steps_Behaviour xsi:type="seff:StartAction" id="_GGqywnQzEeinoOBpMH07LA" entityName="StartTsInvApp" successor_AbstractAction="_PnPxLHQzEeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:StopAction" id="_GwQiUHQzEeinoOBpMH07LA" entityName="StopTsInvApp" predecessor_AbstractAction="_PnPxLHQzEeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:InternalAction" id="_PnPxLHQzEeinoOBpMH07LA" entityName="TS::inv:app.createReport" predecessor_AbstractAction="_GGqywnQzEeinoOBpMH07LA" successor_AbstractAction="_GwQiUHQzEeinoOBpMH07LA"/>
+        <steps_Behaviour xsi:type="seff:StopAction" id="_GwQiUHQzEeinoOBpMH07LA" entityName="StopTsInvApp" predecessor_AbstractAction="_s-QgrHnUEeiCBNz7WZFmbw"/>
+        <steps_Behaviour xsi:type="seff:InternalAction" id="_PnPxLHQzEeinoOBpMH07LA" entityName="TS::inv:app.createReport" predecessor_AbstractAction="_GGqywnQzEeinoOBpMH07LA" successor_AbstractAction="_s-QgrHnUEeiCBNz7WZFmbw"/>
+        <steps_Behaviour xsi:type="seff:InternalAction" id="_s-QgrHnUEeiCBNz7WZFmbw" entityName="assembleReport" predecessor_AbstractAction="_PnPxLHQzEeinoOBpMH07LA" successor_AbstractAction="_GwQiUHQzEeinoOBpMH07LA"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
     <components__Repository xsi:type="repository:BasicComponent" id="_ZynSQHCsEei11fv97AP7Vg" entityName="Tradingssystem::inventory:data">
@@ -65,13 +61,10 @@
       </signatures__OperationInterface>
     </interfaces__Repository>
     <interfaces__Repository xsi:type="repository:OperationInterface" id="_d7qyUHCsEei11fv97AP7Vg" entityName="IStoreInventoryManager">
-      <signatures__OperationInterface id="_3RacIHC4Eei11fv97AP7Vg" entityName="IStoreInventoryManager.createReport">
+      <signatures__OperationInterface id="_3RacIHC4Eei11fv97AP7Vg" entityName="IStoreInventoryManager.createReport" returnType__OperationSignature="_yrJzHHQjEeinoOBpMH07LA">
         <parameters__OperationSignature parameterName="StoreInventory.id">
           <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
         </parameters__OperationSignature>
-      </signatures__OperationInterface>
-      <signatures__OperationInterface id="_RiRg0HC5Eei11fv97AP7Vg" entityName="IStoreInventory.assembleReport" returnType__OperationSignature="_yrJzHHQjEeinoOBpMH07LA">
-        <parameters__OperationSignature dataType__Parameter="_UxQVvHQkEeinoOBpMH07LA" parameterName="StoreInventory.ListyIOrderEntries>"/>
       </signatures__OperationInterface>
     </interfaces__Repository>
     <interfaces__Repository xsi:type="repository:OperationInterface" id="_eAlukHCsEei11fv97AP7Vg" entityName="IStoreQuery">
@@ -110,7 +103,7 @@
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbblZXUTEeiqCpXRWXhBJA"/>
       <dataSeffSpecification href="DataSpecification.xmi#_VY-MEnQbEeinoOBpMH07LA"/>
     </stereotypeApplications>
-    <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification" appliedTo="_Xeg453PyEeinoOBpMH07LA">
+    <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbblZXUTEeiqCpXRWXhBJA"/>
       <dataSeffSpecification href="DataSpecification.xmi#_3JwxwnQ2EeinoOBpMH07LA"/>
     </stereotypeApplications>
@@ -125,7 +118,7 @@
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VXUTEeiqCpXRWXhBJA"/>
     </stereotypeApplications>
-    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_G63_GHQAEeinoOBpMH07LA">
+    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_wvqY8HQyEeinoOBpMH07LA"/>
     </stereotypeApplications>
@@ -147,6 +140,10 @@
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_9dKsvHQ6EeinoOBpMH07LA">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_aMwywHQ9EeinoOBpMH07LA"/>
+    </stereotypeApplications>
+    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_s-QgrHnUEeiCBNz7WZFmbw">
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
+      <dataProcessingContainer href="DataSpecification.xmi#_wvqY8HQyEeinoOBpMH07LA"/>
     </stereotypeApplications>
     <importedProfiles nsURI="http://www.palladiosimulator.org/pcm/dataprocessing/profile/0.1/" location="platform:/plugin/org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram"/>
   </emfprofileapplication:ProfileApplication>
