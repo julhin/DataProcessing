@@ -34,7 +34,8 @@
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_dNh8d3Q6EeinoOBpMH07LA">
         <steps_Behaviour xsi:type="seff:StartAction" id="_7xspYnQ6EeinoOBpMH07LA" entityName="StartSA" successor_AbstractAction="_9dKsvHQ6EeinoOBpMH07LA"/>
         <steps_Behaviour xsi:type="seff:StopAction" id="_8xAKQHQ6EeinoOBpMH07LA" entityName="StopSA" predecessor_AbstractAction="_9dKsvHQ6EeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:InternalAction" id="_9dKsvHQ6EeinoOBpMH07LA" entityName="ServiceAdapter.executeQuery" predecessor_AbstractAction="_7xspYnQ6EeinoOBpMH07LA" successor_AbstractAction="_8xAKQHQ6EeinoOBpMH07LA"/>
+        <steps_Behaviour xsi:type="seff:InternalAction" id="_9dKsvHQ6EeinoOBpMH07LA" entityName="ServiceAdapter.executeQueryWithID" predecessor_AbstractAction="_7xspYnQ6EeinoOBpMH07LA" successor_AbstractAction="_8xAKQHQ6EeinoOBpMH07LA"/>
+        <steps_Behaviour xsi:type="seff:InternalAction" id="_2XKgDHnwEeiCBNz7WZFmbw" entityName="ServiceAdapter.executeQueryWithCustomer"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
     <components__Repository xsi:type="repository:BasicComponent" id="_a1V6kHCsEei11fv97AP7Vg" entityName="Webservice::Inventory">
@@ -144,6 +145,9 @@
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_s-QgrHnUEeiCBNz7WZFmbw">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_wvqY8HQyEeinoOBpMH07LA"/>
+    </stereotypeApplications>
+    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_2XKgDHnwEeiCBNz7WZFmbw">
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
     </stereotypeApplications>
     <importedProfiles nsURI="http://www.palladiosimulator.org/pcm/dataprocessing/profile/0.1/" location="platform:/plugin/org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram"/>
   </emfprofileapplication:ProfileApplication>

@@ -1,75 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataprocessing:DataSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:data="http://www.palladiosimulator.org/pcm/dataprocessing/data/0.1/" xmlns:dataprocessing="http://www.palladiosimulator.org/pcm/dataprocessing/0.1/" xmlns:processing="http://www.palladiosimulator.org/pcm/dataprocessing/processing/0.1/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xsi:schemaLocation="http://www.palladiosimulator.org/pcm/dataprocessing/data/0.1/ http://www.palladiosimulator.org/pcm/dataprocessing/0.1/#//data http://www.palladiosimulator.org/pcm/dataprocessing/processing/0.1/ http://www.palladiosimulator.org/pcm/dataprocessing/0.1/#//processing http://palladiosimulator.org/PalladioComponentModel/Repository/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//repository">
   <dataProcessingContainers id="_iJ8nAHPVEeinoOBpMH07LA" entityName="PickUpShop: CreateReport">
-    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_3s0U83QJEeinoOBpMH07LA" entityName="IStockmanagerInterface.createreport_down">
-      <inputMappings xsi:type="processing:DataParameterMapping" id="_vAg8UHhgEeieOa1iKavmwQ" data="_ZU5PEHQbEeinoOBpMH07LA">
+    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_3EIRs3oGEeiCBNz7WZFmbw" entityName="PickUpShop.createReport">
+      <inputMappings xsi:type="processing:DataParameterMapping" id="_2Bvq0HoKEeiCBNz7WZFmbw" data="_ZU5PEHQbEeinoOBpMH07LA">
         <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
       </inputMappings>
     </operations>
-    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_OWUQg3ngEeiCBNz7WZFmbw" entityName="IStockManager.createReport_up">
-      <outputMappings xsi:type="processing:DataResultMapping" id="_cvCCg3ngEeiCBNz7WZFmbw"/>
-    </operations>
   </dataProcessingContainers>
   <dataProcessingContainers id="_MyLssHQsEeinoOBpMH07LA" entityName="Webservice:Inventory: CreateReport">
-    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_Owt18nQsEeinoOBpMH07LA" entityName="IStoreManager.createReport_down">
-      <inputMappings xsi:type="processing:DataParameterMapping" id="_jufcMHhlEeieOa1iKavmwQ" data="_o_774HQsEeinoOBpMH07LA">
+    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_9RNiM3oKEeiCBNz7WZFmbw" entityName="Webservice:Inventory.createReport">
+      <inputMappings xsi:type="processing:DataParameterMapping" id="_DDpa4HoLEeiCBNz7WZFmbw" data="_o_774HQsEeinoOBpMH07LA">
         <parameter href="default.repository#/0/@interfaces__Repository.1/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
       </inputMappings>
-      <outputMappings xsi:type="processing:DataResultMapping" id="_DqQu03kiEei5_d-4polK5g">
-        <operation href="default.repository#_TZ4qEHC2Eei11fv97AP7Vg"/>
-        <receivedData xsi:type="data:ResultBasedData" id="_EcVsAnkiEei5_d-4polK5g" entityName="IStoreManager.returnValue">
-          <operation href="default.repository#_TZ4qEHC2Eei11fv97AP7Vg"/>
-        </receivedData>
-      </outputMappings>
-    </operations>
-    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_feggg3ngEeiCBNz7WZFmbw" entityName="IStoreManager.creteReport_up">
-      <outputMappings xsi:type="processing:DataResultMapping" id="_kwvYs3nsEeiCBNz7WZFmbw" data="_447O8nnsEeiCBNz7WZFmbw">
-        <operation href="default.repository#_TZ4qEHC2Eei11fv97AP7Vg"/>
-      </outputMappings>
     </operations>
   </dataProcessingContainers>
-  <dataProcessingContainers id="_wvqY8HQyEeinoOBpMH07LA" entityName="Ts:Inv:App_Assemble">
-    <operations xsi:type="processing:CreateDataOperation" id="_yshEYHlaEeiv2oQcN8LDOQ" entityName="TS::inv:app.assembleReport">
-      <resultingData xsi:type="data:ResultBasedData" id="_447O8nnsEeiCBNz7WZFmbw" entityName="TS::inv:app_returndata">
-        <operation href="default.repository#_DevUoHC5Eei11fv97AP7Vg"/>
-      </resultingData>
-    </operations>
-  </dataProcessingContainers>
-  <dataProcessingContainers id="_nFUIoHQ0EeinoOBpMH07LA" entityName="Ts:Inv:App_CreateReport">
-    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_upzbg3Q5EeinoOBpMH07LA" entityName="IStoreInventoryManager.createReport">
-      <inputMappings xsi:type="processing:DataParameterMapping" id="_Bc0bYHhoEeieOa1iKavmwQ" data="_X0NGQXnrEeiCBNz7WZFmbw">
+  <dataProcessingContainers id="_wvqY8HQyEeinoOBpMH07LA" entityName="Ts:Inv:App_Assemble"/>
+  <dataProcessingContainers id="_nFUIoHQ0EeinoOBpMH07LA" entityName="Ts:Inv:App: CreateReport">
+    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_WI_7I3oLEeiCBNz7WZFmbw" entityName="TS::inv:app.createReport">
+      <inputMappings xsi:type="processing:DataParameterMapping" id="_ZvsVAHoLEeiCBNz7WZFmbw" data="_pEoDEHQ2EeinoOBpMH07LA">
         <parameter href="default.repository#/0/@interfaces__Repository.2/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
       </inputMappings>
     </operations>
-    <operations xsi:type="processing:ReturnDataOperation" id="_Ul5qJXneEeiCBNz7WZFmbw" entityName="Ts::Inv:app.createReport_returnData"/>
   </dataProcessingContainers>
-  <dataProcessingContainers id="_l5xJQHQ5EeinoOBpMH07LA" entityName="Ts:Inv:data">
-    <operations xsi:type="processing:CreateDataOperation" id="_O5WGgHlbEeiv2oQcN8LDOQ" entityName="TS::inv:data.createQuery">
-      <resultingData xsi:type="data:ParameterBasedData" id="_X0NGQXnrEeiCBNz7WZFmbw" entityName="StoreQuery.inputdata">
+  <dataProcessingContainers id="_l5xJQHQ5EeinoOBpMH07LA" entityName="Ts:Inv:data_createReportQuery">
+    <operations xsi:type="processing:CreateDataOperation" id="_PGgzMHo0EeiCBNz7WZFmbw" entityName="query2backend">
+      <resultingData xsi:type="data:ParameterBasedData" id="_Rm2B8Xo0EeiCBNz7WZFmbw" entityName="Ts:inv:data_query">
         <parameter href="default.repository#/0/@interfaces__Repository.3/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
       </resultingData>
     </operations>
-    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_GE_dEHnsEeiCBNz7WZFmbw" entityName="TS::inv:data.createQuery_result">
-      <outputMappings xsi:type="processing:DataResultMapping" id="_J8prI3nsEeiCBNz7WZFmbw" data="__7cE4nnrEeiCBNz7WZFmbw"/>
-    </operations>
   </dataProcessingContainers>
   <dataProcessingContainers id="_aMwywHQ9EeinoOBpMH07LA" entityName="ServiceAdapter.executeQuery">
-    <operations xsi:type="processing:SelectionDataOperation" id="_dv9MuXQ9EeinoOBpMH07LA" entityName="serviceAdapter.executeQueryWithID" inputs="_QbTAEHQ6EeinoOBpMH07LA">
-      <output xsi:type="data:OriginalData" id="_b9MiwHhoEeieOa1iKavmwQ" entityName="executeQueryDataID">
-        <originalType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    <operations xsi:type="processing:SelectionDataOperation" id="_ZTMCmXo0EeiCBNz7WZFmbw" entityName="Query_CustomerbyID" inputs="_Rm2B8Xo0EeiCBNz7WZFmbw" parameterData="_Rm2B8Xo0EeiCBNz7WZFmbw">
+      <output xsi:type="data:ResultBasedData" id="_f2bGEno0EeiCBNz7WZFmbw" entityName="result_customerbyID">
+        <operation href="default.repository#_rbNjIHQ6EeinoOBpMH07LA"/>
       </output>
     </operations>
-    <operations xsi:type="processing:ProjectionDataOperation" id="_I2B7CHQ-EeinoOBpMH07LA" entityName="serviceAdapter.executeQueryWithCustomer" inputs="_b9MiwHhoEeieOa1iKavmwQ">
-      <output xsi:type="data:ResultBasedData" id="__7cE4nnrEeiCBNz7WZFmbw" entityName="queryCustomer">
+    <operations xsi:type="processing:ProjectionDataOperation" id="_nNjEqHo0EeiCBNz7WZFmbw" entityName="Query_Orders" inputs="_f2bGEno0EeiCBNz7WZFmbw" parameterData="_f2bGEno0EeiCBNz7WZFmbw">
+      <output xsi:type="data:ResultBasedData" id="_yuszono0EeiCBNz7WZFmbw" entityName="result_CustomerOrders">
         <operation href="default.repository#_J_OmIHC5Eei11fv97AP7Vg"/>
       </output>
-    </operations>
-  </dataProcessingContainers>
-  <dataProcessingContainers id="_9OUd8HlUEeiv2oQcN8LDOQ" entityName="User: Insert ID">
-    <operations xsi:type="processing:PerformDataTransmissionOperation" id="_AWXM83lVEeiv2oQcN8LDOQ" entityName="Insert Data in the system">
-      <inputMappings xsi:type="processing:DataParameterMapping" id="_EeQ2cHlVEeiv2oQcN8LDOQ" data="_KmIzoHlVEeiv2oQcN8LDOQ">
-        <parameter href="default.repository#/0/@interfaces__Repository.1/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
-      </inputMappings>
     </operations>
   </dataProcessingContainers>
   <dataSEFFSpecifications id="_VY-MEnQbEeinoOBpMH07LA" entityName="PickUpShop.createReport">
@@ -82,7 +51,7 @@
   </dataSEFFSpecifications>
   <dataSEFFSpecifications id="_l05-wHQ2EeinoOBpMH07LA" entityName="Ts::Inv:App.createReport">
     <inputData id="_pEoDEHQ2EeinoOBpMH07LA" entityName="TS.createReport">
-      <parameter href="default.repository#/0/@interfaces__Repository.1/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
+      <parameter href="default.repository#/0/@interfaces__Repository.2/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
     </inputData>
   </dataSEFFSpecifications>
   <dataSEFFSpecifications id="_3JwxwnQ2EeinoOBpMH07LA" entityName="Ts::Inv:app.assembleReport">
@@ -91,11 +60,6 @@
   <dataSEFFSpecifications id="_MNp68nQ6EeinoOBpMH07LA" entityName="Ts::Inv:data.createReportQuery">
     <inputData id="_QbTAEHQ6EeinoOBpMH07LA" entityName="createReportQuery">
       <parameter href="default.repository#/0/@interfaces__Repository.3/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
-    </inputData>
-  </dataSEFFSpecifications>
-  <dataSEFFSpecifications id="_IMD94nlVEeiv2oQcN8LDOQ" entityName="User.inputdata">
-    <inputData id="_KmIzoHlVEeiv2oQcN8LDOQ" entityName="user.input">
-      <parameter href="default.repository#/0/@interfaces__Repository.1/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
     </inputData>
   </dataSEFFSpecifications>
   <storeContainers id="_4M7d83RBEeinoOBpMH07LA" entityName="Database">
