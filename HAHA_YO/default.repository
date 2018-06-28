@@ -42,9 +42,9 @@
       <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_EVUtcHCwEei11fv97AP7Vg" entityName="Provided_IStoreManager_Webservice::Inventory" providedInterface__OperationProvidedRole="_d2vPAHCsEei11fv97AP7Vg"/>
       <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_HVjkQHCwEei11fv97AP7Vg" entityName="Required_IStoreInventoryManager_TS::Inv:app" requiredInterface__OperationRequiredRole="_d7qyUHCsEei11fv97AP7Vg"/>
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_YT96N3PyEeinoOBpMH07LA" describedService__SEFF="_TZ4qEHC2Eei11fv97AP7Vg">
-        <steps_Behaviour xsi:type="seff:StartAction" id="_4foaUnP7EeinoOBpMH07LA" entityName="StartWeb" successor_AbstractAction="_L5ZrZnP8EeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:StopAction" id="_3d-JAHP7EeinoOBpMH07LA" entityName="StopWeb" predecessor_AbstractAction="_L5ZrZnP8EeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_L5ZrZnP8EeinoOBpMH07LA" entityName="Webservice:inv.createReport" predecessor_AbstractAction="_4foaUnP7EeinoOBpMH07LA" successor_AbstractAction="_3d-JAHP7EeinoOBpMH07LA" calledService_ExternalService="_TZ4qEHC2Eei11fv97AP7Vg" role_ExternalService="_HVjkQHCwEei11fv97AP7Vg"/>
+        <steps_Behaviour xsi:type="seff:StartAction" id="_4foaUnP7EeinoOBpMH07LA" entityName="StartWeb" successor_AbstractAction="_GGwkXHrAEeiupO6CqRqSzw"/>
+        <steps_Behaviour xsi:type="seff:StopAction" id="_3d-JAHP7EeinoOBpMH07LA" entityName="StopWeb" predecessor_AbstractAction="_GGwkXHrAEeiupO6CqRqSzw"/>
+        <steps_Behaviour xsi:type="seff:InternalAction" id="_GGwkXHrAEeiupO6CqRqSzw" entityName="Webservice:inventory.createReport" predecessor_AbstractAction="_4foaUnP7EeinoOBpMH07LA" successor_AbstractAction="_3d-JAHP7EeinoOBpMH07LA"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
     <interfaces__Repository xsi:type="repository:OperationInterface" id="_dySM0HCsEei11fv97AP7Vg" entityName="IStockManagerInterface">
@@ -88,12 +88,12 @@
     <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_yrJzHHQjEeinoOBpMH07LA" entityName="Report">
       <innerType_CollectionDataType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
     </dataTypes__Repository>
+    <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_oMT-PHQ6EeinoOBpMH07LA" entityName="Customer"/>
     <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_8vpW3HQjEeinoOBpMH07LA" entityName="query">
       <innerType_CollectionDataType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
     </dataTypes__Repository>
     <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_UxQVvHQkEeinoOBpMH07LA" entityName="List&lt;IOrderEntries>" innerType_CollectionDataType="_Yc12rHQkEeinoOBpMH07LA"/>
     <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_Yc12rHQkEeinoOBpMH07LA" entityName="IOrderEntries"/>
-    <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_oMT-PHQ6EeinoOBpMH07LA" entityName="Customer"/>
   </repository:Repository>
   <emfprofileapplication:ProfileApplication>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification" appliedTo="_O777QHC6Eei11fv97AP7Vg">
@@ -112,7 +112,7 @@
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbblZXUTEeiqCpXRWXhBJA"/>
       <dataSeffSpecification href="DataSpecification.xmi#_lBODknQsEeinoOBpMH07LA"/>
     </stereotypeApplications>
-    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_L5ZrZnP8EeinoOBpMH07LA">
+    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VXUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_MyLssHQsEeinoOBpMH07LA"/>
     </stereotypeApplications>
@@ -148,6 +148,10 @@
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_2XKgDHnwEeiCBNz7WZFmbw">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
+    </stereotypeApplications>
+    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_GGwkXHrAEeiupO6CqRqSzw">
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
+      <dataProcessingContainer href="DataSpecification.xmi#_MyLssHQsEeinoOBpMH07LA"/>
     </stereotypeApplications>
     <importedProfiles nsURI="http://www.palladiosimulator.org/pcm/dataprocessing/profile/0.1/" location="platform:/plugin/org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram"/>
   </emfprofileapplication:ProfileApplication>
