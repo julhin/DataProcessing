@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataProcessingProfile="http://www.palladiosimulator.org/pcm/dataprocessing/profile/0.1/" xmlns:emfprofileapplication="http://www.modelversioning.org/emfprofile/application/1.1" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataProcessingProfile="http://www.palladiosimulator.org/pcm/dataprocessing/profile/0.1/" xmlns:edu.kit.kastel.scbs.pcmconfidentialityprofile="http://edu.kit.kastel.scbs/pcmconfidentialityprofile" xmlns:emfprofileapplication="http://www.modelversioning.org/emfprofile/application/1.1" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2">
   <repository:Repository id="_hr8KUGkqEei4C4nWQmUvDw" entityName="defaultRepository">
     <components__Repository xsi:type="repository:BasicComponent" id="_ZQv7UHCsEei11fv97AP7Vg" entityName="PickupShop">
       <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_DkuW8HCwEei11fv97AP7Vg" entityName="Provided_IStockManagerInterface_PickupShop" providedInterface__OperationProvidedRole="_dySM0HCsEei11fv97AP7Vg"/>
@@ -77,9 +77,9 @@
     </interfaces__Repository>
     <interfaces__Repository xsi:type="repository:OperationInterface" id="_eEewEHCsEei11fv97AP7Vg" entityName="ServiceAdapter">
       <signatures__OperationInterface id="_J_OmIHC5Eei11fv97AP7Vg" entityName="ServiceAdapter.executeQueryCustomerOrders" returnType__OperationSignature="_UxQVvHQkEeinoOBpMH07LA">
-        <parameters__OperationSignature dataType__Parameter="_oMT-PHQ6EeinoOBpMH07LA" parameterName=" ServiceAdapter.customer"/>
+        <parameters__OperationSignature parameterName=" ServiceAdapter.customer"/>
       </signatures__OperationInterface>
-      <signatures__OperationInterface id="_rbNjIHQ6EeinoOBpMH07LA" entityName="ServiceAdapter.executeQueryCustomerID" returnType__OperationSignature="_oMT-PHQ6EeinoOBpMH07LA">
+      <signatures__OperationInterface id="_rbNjIHQ6EeinoOBpMH07LA" entityName="ServiceAdapter.executeQueryCustomerID">
         <parameters__OperationSignature parameterName="ServiceAdapter.id">
           <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
         </parameters__OperationSignature>
@@ -88,12 +88,12 @@
     <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_yrJzHHQjEeinoOBpMH07LA" entityName="Report">
       <innerType_CollectionDataType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
     </dataTypes__Repository>
-    <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_oMT-PHQ6EeinoOBpMH07LA" entityName="Customer"/>
+    <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_Yc12rHQkEeinoOBpMH07LA" entityName="IOrderEntries"/>
     <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_8vpW3HQjEeinoOBpMH07LA" entityName="query">
       <innerType_CollectionDataType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
     </dataTypes__Repository>
     <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_UxQVvHQkEeinoOBpMH07LA" entityName="List&lt;IOrderEntries>" innerType_CollectionDataType="_Yc12rHQkEeinoOBpMH07LA"/>
-    <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_Yc12rHQkEeinoOBpMH07LA" entityName="IOrderEntries"/>
+    <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_rKAB3X7DEeiaS-Ue-vOVzA" entityName="Customer"/>
   </repository:Repository>
   <emfprofileapplication:ProfileApplication>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification" appliedTo="_O777QHC6Eei11fv97AP7Vg">
@@ -153,6 +153,20 @@
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_MyLssHQsEeinoOBpMH07LA"/>
     </stereotypeApplications>
+    <stereotypeApplications xsi:type="dataProcessingProfile:StoreHaving" appliedTo="_alWWwHCsEei11fv97AP7Vg">
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbcMcXUTEeiqCpXRWXhBJA"/>
+      <storeContainer href="DataSpecification.xmi#_4M7d83RBEeinoOBpMH07LA"/>
+    </stereotypeApplications>
+    <stereotypeApplications xsi:type="edu.kit.kastel.scbs.pcmconfidentialityprofile:InformationFlowParameter" appliedTo="_3RacIHC4Eei11fv97AP7Vg">
+      <extension href="../../plugin/edu.kit.kastel.scbs.pcmconfidentialityprofile/confidentiality.emfprofile_diagram#_frmBgDF1EeaZ1ISuff6-rA"/>
+    </stereotypeApplications>
+    <stereotypeApplications xsi:type="edu.kit.kastel.scbs.pcmconfidentialityprofile:InformationFlowParameter" appliedTo="_TZ4qEHC2Eei11fv97AP7Vg">
+      <extension href="../../plugin/edu.kit.kastel.scbs.pcmconfidentialityprofile/confidentiality.emfprofile_diagram#_frmBgDF1EeaZ1ISuff6-rA"/>
+    </stereotypeApplications>
+    <stereotypeApplications xsi:type="edu.kit.kastel.scbs.pcmconfidentialityprofile:InformationFlow" appliedTo="_ZY2fsHCyEei11fv97AP7Vg">
+      <extension href="../../plugin/edu.kit.kastel.scbs.pcmconfidentialityprofile/confidentiality.emfprofile_diagram#_g1JGUJnREeWvVMHOHv3ROA"/>
+    </stereotypeApplications>
     <importedProfiles nsURI="http://www.palladiosimulator.org/pcm/dataprocessing/profile/0.1/" location="platform:/plugin/org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram"/>
+    <importedProfiles nsURI="http://edu.kit.kastel.scbs/pcmconfidentialityprofile" location="platform:/plugin/edu.kit.kastel.scbs.pcmconfidentialityprofile/confidentiality.emfprofile_diagram"/>
   </emfprofileapplication:ProfileApplication>
 </xmi:XMI>

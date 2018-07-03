@@ -15,6 +15,10 @@
     <semanticResources>http://sdq.ipd.uka.de/Identifier/2.1</semanticResources>
     <semanticResources>http://sdq.ipd.uka.de/StochasticExpressions/2.2</semanticResources>
     <semanticResources>http://sdq.ipd.uka.de/Units/2.1</semanticResources>
+    <semanticResources>MyConfidentiality.confidentiality</semanticResources>
+    <semanticResources>default.confidentiality</semanticResources>
+    <semanticResources>platform:/plugin/edu.kit.kastel.scbs.pcmconfidentialityprofile/confidentiality.emfprofile_diagram</semanticResources>
+    <semanticResources>http://edu.kit.kastel.scbs.confidentiality</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_hJq5QGsjEeijcbmjz0-L3g">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.palladiosimulator.editors.sirius.seff/description/seff.odesign#//@ownedViewpoints[name='Seff']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_hN7HIGsjEeijcbmjz0-L3g" name="Seff Diagram" repPath="#_hKOS4GsjEeijcbmjz0-L3g">
