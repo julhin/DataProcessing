@@ -89,11 +89,13 @@
       <innerType_CollectionDataType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
     </dataTypes__Repository>
     <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_Yc12rHQkEeinoOBpMH07LA" entityName="IOrderEntries"/>
-    <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_8vpW3HQjEeinoOBpMH07LA" entityName="query">
-      <innerType_CollectionDataType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
-    </dataTypes__Repository>
-    <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_UxQVvHQkEeinoOBpMH07LA" entityName="List&lt;IOrderEntries>" innerType_CollectionDataType="_Yc12rHQkEeinoOBpMH07LA"/>
     <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_rKAB3X7DEeiaS-Ue-vOVzA" entityName="Customer"/>
+    <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_UxQVvHQkEeinoOBpMH07LA" entityName="List&lt;IOrderEntries>" innerType_CollectionDataType="_Yc12rHQkEeinoOBpMH07LA"/>
+    <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_ehhrHX-XEeiYVZcJd-4VXQ" entityName="query">
+      <innerDeclaration_CompositeDataType entityName="queries">
+        <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </innerDeclaration_CompositeDataType>
+    </dataTypes__Repository>
   </repository:Repository>
   <emfprofileapplication:ProfileApplication>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification" appliedTo="_O777QHC6Eei11fv97AP7Vg">
