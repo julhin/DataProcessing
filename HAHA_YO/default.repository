@@ -15,9 +15,9 @@
       <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_H1YT0HCwEei11fv97AP7Vg" entityName="Required_IStoreQuery_Tradingssystem::inventory:data" requiredInterface__OperationRequiredRole="_eAlukHCsEei11fv97AP7Vg"/>
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_-6bOh3QyEeinoOBpMH07LA" describedService__SEFF="_3RacIHC4Eei11fv97AP7Vg">
         <steps_Behaviour xsi:type="seff:StartAction" id="_GGqywnQzEeinoOBpMH07LA" entityName="StartTsInvApp" successor_AbstractAction="_PnPxLHQzEeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:StopAction" id="_GwQiUHQzEeinoOBpMH07LA" entityName="StopTsInvApp" predecessor_AbstractAction="_s-QgrHnUEeiCBNz7WZFmbw"/>
         <steps_Behaviour xsi:type="seff:InternalAction" id="_PnPxLHQzEeinoOBpMH07LA" entityName="TS::inv:app.createReport" predecessor_AbstractAction="_GGqywnQzEeinoOBpMH07LA" successor_AbstractAction="_s-QgrHnUEeiCBNz7WZFmbw"/>
         <steps_Behaviour xsi:type="seff:InternalAction" id="_s-QgrHnUEeiCBNz7WZFmbw" entityName="assembleReport" predecessor_AbstractAction="_PnPxLHQzEeinoOBpMH07LA" successor_AbstractAction="_GwQiUHQzEeinoOBpMH07LA"/>
+        <steps_Behaviour xsi:type="seff:StopAction" id="_GwQiUHQzEeinoOBpMH07LA" entityName="StopTsInvApp" predecessor_AbstractAction="_s-QgrHnUEeiCBNz7WZFmbw"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
     <components__Repository xsi:type="repository:BasicComponent" id="_ZynSQHCsEei11fv97AP7Vg" entityName="Tradingssystem::inventory:data">

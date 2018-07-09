@@ -34,26 +34,27 @@
         <inputMappings xsi:type="processing:DataParameterMapping" id="_ZvsVAHoLEeiCBNz7WZFmbw" data="_pEoDEHQ2EeinoOBpMH07LA">
           <parameter href="default.repository#/0/@interfaces__Repository.2/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
         </inputMappings>
-        <outputMappings xsi:type="processing:DataResultMapping" id="_uEjq44NXEeiZU6L_PsRjfw" data="_O0-CYoNXEeiZU6L_PsRjfw">
+        <outputMappings xsi:type="processing:DataResultMapping" id="_uEjq44NXEeiZU6L_PsRjfw">
           <operation href="default.repository#_3RacIHC4Eei11fv97AP7Vg"/>
         </outputMappings>
       </operations>
     </dataProcessingContainers>
     <dataProcessingContainers id="_l5xJQHQ5EeinoOBpMH07LA" entityName="Ts:Inv:data_createReportQuery">
-      <operations xsi:type="processing:JoinDataOperation" id="_DIAmJn-gEeiYVZcJd-4VXQ" entityName="TS:inv:data_createQuery" consumedData="_pEoDEHQ2EeinoOBpMH07LA">
-        <resultingData xsi:type="data:ResultBasedData" id="_yuszono0EeiCBNz7WZFmbw" entityName="result_CustomerOrders">
-          <operation href="default.repository#_J_OmIHC5Eei11fv97AP7Vg"/>
+      <operations xsi:type="processing:JoinDataOperation" id="_DIAmJn-gEeiYVZcJd-4VXQ" entityName="TS:inv:data_createQuery" consumedData="_zSMj8ILUEeiX9-UWTLrU2A">
+        <resultingData xsi:type="data:ParameterBasedData" id="_KNdHEYOLEeiZ75WE3DItDQ" entityName="TS:inv:data_createdQuery">
+          <parameter href="default.repository#/0/@interfaces__Repository.3/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
         </resultingData>
       </operations>
+      <operations xsi:type="processing:CreateDataOperation" id="_JwyZMIOLEeiZ75WE3DItDQ" entityName="TS:inv:Data_Query"/>
     </dataProcessingContainers>
     <dataProcessingContainers id="_aMwywHQ9EeinoOBpMH07LA" entityName="ServiceAdapter.executeQuery">
-      <operations xsi:type="processing:SelectionDataOperation" id="_ZTMCmXo0EeiCBNz7WZFmbw" entityName="Query_CustomerbyID">
-        <output xsi:type="data:ResultBasedData" id="_f2bGEno0EeiCBNz7WZFmbw" entityName="result_customerbyID">
+      <operations xsi:type="processing:SelectionDataOperation" id="_cYxoCYOLEeiZ75WE3DItDQ" entityName="ServiceAdapter.queryCustomerbyID" inputs="_KNdHEYOLEeiZ75WE3DItDQ">
+        <output xsi:type="data:ResultBasedData" id="_ty7KsoOLEeiZ75WE3DItDQ" entityName="ServiceAdapter_queriedCustomer">
           <operation href="default.repository#_rbNjIHQ6EeinoOBpMH07LA"/>
         </output>
       </operations>
-      <operations xsi:type="processing:ProjectionDataOperation" id="_nNjEqHo0EeiCBNz7WZFmbw" entityName="Query_Orders" inputs="_f2bGEno0EeiCBNz7WZFmbw" parameterData="_f2bGEno0EeiCBNz7WZFmbw">
-        <output xsi:type="data:ResultBasedData" id="_O0-CYoNXEeiZU6L_PsRjfw" entityName="result_customerOrders">
+      <operations xsi:type="processing:ProjectionDataOperation" id="_rAthyIOLEeiZ75WE3DItDQ" entityName="ServiceAdapter.queryOrders" inputs="_ty7KsoOLEeiZ75WE3DItDQ">
+        <output xsi:type="data:ResultBasedData" id="_W2QnYoObEeiZ75WE3DItDQ" entityName="ServiceAdapter_queriedOrders">
           <operation href="default.repository#_J_OmIHC5Eei11fv97AP7Vg"/>
         </output>
       </operations>
