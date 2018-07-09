@@ -77,9 +77,9 @@
     </interfaces__Repository>
     <interfaces__Repository xsi:type="repository:OperationInterface" id="_eEewEHCsEei11fv97AP7Vg" entityName="ServiceAdapter">
       <signatures__OperationInterface id="_J_OmIHC5Eei11fv97AP7Vg" entityName="ServiceAdapter.executeQueryCustomerOrders" returnType__OperationSignature="_UxQVvHQkEeinoOBpMH07LA">
-        <parameters__OperationSignature parameterName=" ServiceAdapter.customer"/>
+        <parameters__OperationSignature dataType__Parameter="_rKAB3X7DEeiaS-Ue-vOVzA" parameterName=" ServiceAdapter.customer"/>
       </signatures__OperationInterface>
-      <signatures__OperationInterface id="_rbNjIHQ6EeinoOBpMH07LA" entityName="ServiceAdapter.executeQueryCustomerID">
+      <signatures__OperationInterface id="_rbNjIHQ6EeinoOBpMH07LA" entityName="ServiceAdapter.executeQueryCustomerID" returnType__OperationSignature="_rKAB3X7DEeiaS-Ue-vOVzA">
         <parameters__OperationSignature parameterName="ServiceAdapter.id">
           <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
         </parameters__OperationSignature>
@@ -108,7 +108,6 @@
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbblZXUTEeiqCpXRWXhBJA"/>
-      <dataSeffSpecification href="DataSpecification.xmi#_3JwxwnQ2EeinoOBpMH07LA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification" appliedTo="_YT96N3PyEeinoOBpMH07LA">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbblZXUTEeiqCpXRWXhBJA"/>
