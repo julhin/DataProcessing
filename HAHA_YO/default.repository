@@ -6,8 +6,8 @@
       <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_GwPQsHCwEei11fv97AP7Vg" entityName="Required_IStoreManager_Webservice" requiredInterface__OperationRequiredRole="_d2vPAHCsEei11fv97AP7Vg"/>
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_WyKwR3PyEeinoOBpMH07LA" describedService__SEFF="_ZY2fsHCyEei11fv97AP7Vg">
         <steps_Behaviour xsi:type="seff:StartAction" id="_CePncnQbEeinoOBpMH07LA" entityName="StartPickUpShop" successor_AbstractAction="_DlOdpnQbEeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:StopAction" id="_DAicMHQbEeinoOBpMH07LA" entityName="EndPickUpShop" predecessor_AbstractAction="_DlOdpnQbEeinoOBpMH07LA"/>
         <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_DlOdpnQbEeinoOBpMH07LA" entityName="PickupShop.createReport" predecessor_AbstractAction="_CePncnQbEeinoOBpMH07LA" successor_AbstractAction="_DAicMHQbEeinoOBpMH07LA" calledService_ExternalService="_ZY2fsHCyEei11fv97AP7Vg"/>
+        <steps_Behaviour xsi:type="seff:StopAction" id="_DAicMHQbEeinoOBpMH07LA" entityName="EndPickUpShop" predecessor_AbstractAction="_DlOdpnQbEeinoOBpMH07LA"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
     <components__Repository xsi:type="repository:BasicComponent" id="_ZifLkHCsEei11fv97AP7Vg" entityName="Tradingssystem::inventory:app">
@@ -25,17 +25,17 @@
       <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_I8iwMHCwEei11fv97AP7Vg" entityName="Required_ServiceAdapter" requiredInterface__OperationRequiredRole="_eEewEHCsEei11fv97AP7Vg"/>
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_O777QHC6Eei11fv97AP7Vg" describedService__SEFF="_DevUoHC5Eei11fv97AP7Vg">
         <steps_Behaviour xsi:type="seff:StartAction" id="_PoQOsHC6Eei11fv97AP7Vg" entityName="StartTsInvData" successor_AbstractAction="_Nq4jbHQ5EeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:StopAction" id="_PoQ1wHC6Eei11fv97AP7Vg" entityName="StopTsInvData" predecessor_AbstractAction="_Nq4jbHQ5EeinoOBpMH07LA"/>
         <steps_Behaviour xsi:type="seff:InternalAction" id="_Nq4jbHQ5EeinoOBpMH07LA" entityName="TS::inv:data.createReportQuery" predecessor_AbstractAction="_PoQOsHC6Eei11fv97AP7Vg" successor_AbstractAction="_PoQ1wHC6Eei11fv97AP7Vg"/>
+        <steps_Behaviour xsi:type="seff:StopAction" id="_PoQ1wHC6Eei11fv97AP7Vg" entityName="StopTsInvData" predecessor_AbstractAction="_Nq4jbHQ5EeinoOBpMH07LA"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
     <components__Repository xsi:type="repository:BasicComponent" id="_alWWwHCsEei11fv97AP7Vg" entityName="ServiceAdapter">
       <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_FwjVUHCwEei11fv97AP7Vg" entityName="Provided_ServiceAdapter" providedInterface__OperationProvidedRole="_eEewEHCsEei11fv97AP7Vg"/>
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_dNh8d3Q6EeinoOBpMH07LA">
         <steps_Behaviour xsi:type="seff:StartAction" id="_7xspYnQ6EeinoOBpMH07LA" entityName="StartSA" successor_AbstractAction="_9dKsvHQ6EeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:StopAction" id="_8xAKQHQ6EeinoOBpMH07LA" entityName="StopSA" predecessor_AbstractAction="_9dKsvHQ6EeinoOBpMH07LA"/>
         <steps_Behaviour xsi:type="seff:InternalAction" id="_9dKsvHQ6EeinoOBpMH07LA" entityName="ServiceAdapter.executeQueryWithID" predecessor_AbstractAction="_7xspYnQ6EeinoOBpMH07LA" successor_AbstractAction="_8xAKQHQ6EeinoOBpMH07LA"/>
         <steps_Behaviour xsi:type="seff:InternalAction" id="_2XKgDHnwEeiCBNz7WZFmbw" entityName="ServiceAdapter.executeQueryWithCustomer"/>
+        <steps_Behaviour xsi:type="seff:StopAction" id="_8xAKQHQ6EeinoOBpMH07LA" entityName="StopSA" predecessor_AbstractAction="_9dKsvHQ6EeinoOBpMH07LA"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
     <components__Repository xsi:type="repository:BasicComponent" id="_a1V6kHCsEei11fv97AP7Vg" entityName="Webservice::Inventory">
@@ -43,8 +43,8 @@
       <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_HVjkQHCwEei11fv97AP7Vg" entityName="Required_IStoreInventoryManager_TS::Inv:app" requiredInterface__OperationRequiredRole="_d7qyUHCsEei11fv97AP7Vg"/>
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_YT96N3PyEeinoOBpMH07LA" describedService__SEFF="_TZ4qEHC2Eei11fv97AP7Vg">
         <steps_Behaviour xsi:type="seff:StartAction" id="_4foaUnP7EeinoOBpMH07LA" entityName="StartWeb" successor_AbstractAction="_GGwkXHrAEeiupO6CqRqSzw"/>
-        <steps_Behaviour xsi:type="seff:StopAction" id="_3d-JAHP7EeinoOBpMH07LA" entityName="StopWeb" predecessor_AbstractAction="_GGwkXHrAEeiupO6CqRqSzw"/>
         <steps_Behaviour xsi:type="seff:InternalAction" id="_GGwkXHrAEeiupO6CqRqSzw" entityName="Webservice:inventory.createReport" predecessor_AbstractAction="_4foaUnP7EeinoOBpMH07LA" successor_AbstractAction="_3d-JAHP7EeinoOBpMH07LA"/>
+        <steps_Behaviour xsi:type="seff:StopAction" id="_3d-JAHP7EeinoOBpMH07LA" entityName="StopWeb" predecessor_AbstractAction="_GGwkXHrAEeiupO6CqRqSzw"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
     <interfaces__Repository xsi:type="repository:OperationInterface" id="_dySM0HCsEei11fv97AP7Vg" entityName="IStockManagerInterface">
@@ -88,8 +88,18 @@
     <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_yrJzHHQjEeinoOBpMH07LA" entityName="Report">
       <innerType_CollectionDataType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
     </dataTypes__Repository>
-    <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_Yc12rHQkEeinoOBpMH07LA" entityName="IOrderEntries"/>
-    <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_rKAB3X7DEeiaS-Ue-vOVzA" entityName="Customer"/>
+    <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_Yc12rHQkEeinoOBpMH07LA" entityName="IOrderEntries">
+      <innerType_CollectionDataType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </dataTypes__Repository>
+    <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_rKAB3X7DEeiaS-Ue-vOVzA" entityName="Customer">
+      <innerDeclaration_CompositeDataType entityName="customer.id">
+        <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+      </innerDeclaration_CompositeDataType>
+      <innerDeclaration_CompositeDataType entityName="customer.name">
+        <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </innerDeclaration_CompositeDataType>
+      <innerDeclaration_CompositeDataType entityName="customer.purchasedProducts" datatype_InnerDeclaration="_UxQVvHQkEeinoOBpMH07LA"/>
+    </dataTypes__Repository>
     <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_UxQVvHQkEeinoOBpMH07LA" entityName="List&lt;IOrderEntries>" innerType_CollectionDataType="_Yc12rHQkEeinoOBpMH07LA"/>
     <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_ehhrHX-XEeiYVZcJd-4VXQ" entityName="query">
       <innerDeclaration_CompositeDataType entityName="queries">
