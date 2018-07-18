@@ -45,11 +45,6 @@
         </outputMappings>
       </operations>
     </dataProcessingContainers>
-    <dataProcessingContainers id="_l5xJQHQ5EeinoOBpMH07LA" entityName="Ts:Inv:data_createReportQuery">
-      <operations xsi:type="processing:CreateDataOperation" id="_cNGQEIm4Eei-urmb0SU48A" entityName="TS:inv:data_query">
-        <resultingData xsi:type="data:ResultBasedData" id="_Sx2YconKEei-urmb0SU48A" entityName="TS:inv:data_query"/>
-      </operations>
-    </dataProcessingContainers>
     <dataProcessingContainers id="_aMwywHQ9EeinoOBpMH07LA" entityName="ServiceAdapter.executeQuery">
       <operations xsi:type="processing:LoadAllDataOperation" id="_9M7gcomzEei-urmb0SU48A" entityName="ServiceAdapter.loadCompleteDatabase" store="_2ws7UImcEei-urmb0SU48A">
         <resultingData xsi:type="data:ResultBasedData" id="_I3itcom0Eei-urmb0SU48A" entityName="ServiceAdapter.completeDatabase">
@@ -59,42 +54,34 @@
     </dataProcessingContainers>
     <dataProcessingContainers id="_H1pBMInYEei-urmb0SU48A" entityName="TS:inv:data_extractData">
       <operations xsi:type="processing:SelectionDataOperation" id="_QNHvGYoQEei-urmb0SU48A" entityName="SelectCustomers" inputs="_I3itcom0Eei-urmb0SU48A" parameterData="_zSMj8ILUEeiX9-UWTLrU2A">
-        <output xsi:type="data:ResultBasedData" id="_iqDgQooXEei-urmb0SU48A" entityName="DatabaseEntriesCustomers">
+        <output xsi:type="data:ResultBasedData" id="_iqDgQooXEei-urmb0SU48A" entityName="TS:inv:data_DatabaseEntriesCustomers">
           <operation href="default.repository#_DevUoHC5Eei11fv97AP7Vg"/>
         </output>
       </operations>
       <operations xsi:type="processing:ProjectionDataOperation" id="_Q6qKh4oQEei-urmb0SU48A" entityName="SelctOrdersForCustomers" inputs="_I3itcom0Eei-urmb0SU48A" parameterData="_iqDgQooXEei-urmb0SU48A">
-        <output xsi:type="data:ResultBasedData" id="_gRw9wooYEei-urmb0SU48A" entityName="OrdersForCustomers">
+        <output xsi:type="data:ResultBasedData" id="_gRw9wooYEei-urmb0SU48A" entityName="TS:inv:data_OrdersForCustomers">
           <operation href="default.repository#_DevUoHC5Eei11fv97AP7Vg"/>
         </output>
       </operations>
     </dataProcessingContainers>
     <dataSEFFSpecifications id="_VY-MEnQbEeinoOBpMH07LA" entityName="PickUpShop.createReport">
-      <inputData id="_ZU5PEHQbEeinoOBpMH07LA" entityName="PickUpShop.inputData">
+      <inputData id="_ZU5PEHQbEeinoOBpMH07LA" entityName="PickUpShop.inputData_ID">
         <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
       </inputData>
     </dataSEFFSpecifications>
     <dataSEFFSpecifications id="_lBODknQsEeinoOBpMH07LA" entityName="Webservice::Inventory.createReport">
-      <inputData id="_o_774HQsEeinoOBpMH07LA" entityName="Webservice::Inventory.inputData">
+      <inputData id="_o_774HQsEeinoOBpMH07LA" entityName="Webservice::Inventory.inputData_ID">
         <parameter href="default.repository#/0/@interfaces__Repository.1/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
       </inputData>
     </dataSEFFSpecifications>
     <dataSEFFSpecifications id="_l05-wHQ2EeinoOBpMH07LA" entityName="Ts::Inv:App.createReport">
-      <inputData id="_pEoDEHQ2EeinoOBpMH07LA" entityName="TS:inv:app.createReport_inputdata">
+      <inputData id="_pEoDEHQ2EeinoOBpMH07LA" entityName="TS:inv:app.createReport_inputdata_ID">
         <parameter href="default.repository#/0/@interfaces__Repository.2/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
       </inputData>
     </dataSEFFSpecifications>
     <dataSEFFSpecifications id="_MNp68nQ6EeinoOBpMH07LA" entityName="Ts::Inv:data.createReportQuery">
-      <inputData id="_zSMj8ILUEeiX9-UWTLrU2A" entityName="TS:inv:data.createReportQuery_inputdata"/>
+      <inputData id="_zSMj8ILUEeiX9-UWTLrU2A" entityName="TS:inv:data.createReportQuery_inputdata_ID"/>
     </dataSEFFSpecifications>
-    <storeContainers id="_4M7d83RBEeinoOBpMH07LA" entityName="Database">
-      <stores id="_5L61wHRBEeinoOBpMH07LA" entityName="CustomerDB">
-        <dataType xsi:type="repository:CompositeDataType" href="default.repository#_rKAB3X7DEeiaS-Ue-vOVzA"/>
-      </stores>
-      <stores id="_Ei8YYHRCEeinoOBpMH07LA" entityName="IOrderEntriesDB">
-        <dataType xsi:type="repository:CollectionDataType" href="default.repository#_Yc12rHQkEeinoOBpMH07LA"/>
-      </stores>
-    </storeContainers>
     <storeContainers id="_ygVSU4mcEei-urmb0SU48A" entityName="DataBase_v2.0">
       <stores id="_2ws7UImcEei-urmb0SU48A" entityName="Database">
         <dataType xsi:type="repository:CompositeDataType" href="default.repository#_wcU7zYmzEei-urmb0SU48A"/>

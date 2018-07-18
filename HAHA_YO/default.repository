@@ -24,10 +24,9 @@
       <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_FRsPEHCwEei11fv97AP7Vg" entityName="Provided_IStoreQuery_Tradingssystem::inventory:data" providedInterface__OperationProvidedRole="_eAlukHCsEei11fv97AP7Vg"/>
       <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_I8iwMHCwEei11fv97AP7Vg" entityName="Required_ServiceAdapter" requiredInterface__OperationRequiredRole="_eEewEHCsEei11fv97AP7Vg"/>
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_O777QHC6Eei11fv97AP7Vg" describedService__SEFF="_DevUoHC5Eei11fv97AP7Vg">
-        <steps_Behaviour xsi:type="seff:StartAction" id="_PoQOsHC6Eei11fv97AP7Vg" entityName="StartTsInvData" successor_AbstractAction="_Nq4jbHQ5EeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:InternalAction" id="_Nq4jbHQ5EeinoOBpMH07LA" entityName="TS::inv:data.createReportQuery" predecessor_AbstractAction="_PoQOsHC6Eei11fv97AP7Vg" successor_AbstractAction="_JDgWLIoSEei-urmb0SU48A"/>
-        <steps_Behaviour xsi:type="seff:InternalAction" id="_JDgWLIoSEei-urmb0SU48A" entityName="TS:inv:data_extractData" predecessor_AbstractAction="_Nq4jbHQ5EeinoOBpMH07LA" successor_AbstractAction="_PoQ1wHC6Eei11fv97AP7Vg"/>
+        <steps_Behaviour xsi:type="seff:StartAction" id="_PoQOsHC6Eei11fv97AP7Vg" entityName="StartTsInvData" successor_AbstractAction="_JDgWLIoSEei-urmb0SU48A"/>
         <steps_Behaviour xsi:type="seff:StopAction" id="_PoQ1wHC6Eei11fv97AP7Vg" entityName="StopTsInvData" predecessor_AbstractAction="_JDgWLIoSEei-urmb0SU48A"/>
+        <steps_Behaviour xsi:type="seff:InternalAction" id="_JDgWLIoSEei-urmb0SU48A" entityName="TS:inv:data_extractData" predecessor_AbstractAction="_PoQOsHC6Eei11fv97AP7Vg" successor_AbstractAction="_PoQ1wHC6Eei11fv97AP7Vg"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
     <components__Repository xsi:type="repository:BasicComponent" id="_alWWwHCsEei11fv97AP7Vg" entityName="ServiceAdapter">
@@ -70,7 +69,7 @@
       </signatures__OperationInterface>
     </interfaces__Repository>
     <interfaces__Repository xsi:type="repository:OperationInterface" id="_eAlukHCsEei11fv97AP7Vg" entityName="IStoreQuery">
-      <signatures__OperationInterface id="_DevUoHC5Eei11fv97AP7Vg" entityName="IStoreQuery.createReportQuery">
+      <signatures__OperationInterface id="_DevUoHC5Eei11fv97AP7Vg" entityName="IStoreQuery.queryOrdersByCustomer" returnType__OperationSignature="_UxQVvHQkEeinoOBpMH07LA">
         <parameters__OperationSignature parameterName="StoreQuery.id">
           <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
         </parameters__OperationSignature>
@@ -173,7 +172,6 @@
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:StoreHaving" appliedTo="_alWWwHCsEei11fv97AP7Vg">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbcMcXUTEeiqCpXRWXhBJA"/>
-      <storeContainer href="DataSpecification.xmi#_4M7d83RBEeinoOBpMH07LA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="edu.kit.kastel.scbs.pcmconfidentialityprofile:InformationFlowParameter" appliedTo="_3RacIHC4Eei11fv97AP7Vg">
       <extension href="../../plugin/edu.kit.kastel.scbs.pcmconfidentialityprofile/confidentiality.emfprofile_diagram#_frmBgDF1EeaZ1ISuff6-rA"/>
@@ -184,9 +182,8 @@
     <stereotypeApplications xsi:type="edu.kit.kastel.scbs.pcmconfidentialityprofile:InformationFlow" appliedTo="_ZY2fsHCyEei11fv97AP7Vg">
       <extension href="../../plugin/edu.kit.kastel.scbs.pcmconfidentialityprofile/confidentiality.emfprofile_diagram#_g1JGUJnREeWvVMHOHv3ROA"/>
     </stereotypeApplications>
-    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_Nq4jbHQ5EeinoOBpMH07LA">
+    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
-      <dataProcessingContainer href="DataSpecification.xmi#_l5xJQHQ5EeinoOBpMH07LA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_JDgWLIoSEei-urmb0SU48A">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
