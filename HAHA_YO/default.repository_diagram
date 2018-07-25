@@ -137,10 +137,6 @@
           <element xmi:type="repository:OperationSignature" href="default.repository#_DevUoHC5Eei11fv97AP7Vg"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_DewiwXC5Eei11fv97AP7Vg"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_RiXAYHC5Eei11fv97AP7Vg" type="3106">
-          <element xmi:type="repository:OperationSignature" href="default.repository#_RiRg0HC5Eei11fv97AP7Vg"/>
-          <layoutConstraint xmi:type="notation:Location" xmi:id="_RiXAYXC5Eei11fv97AP7Vg"/>
-        </children>
         <styles xmi:type="notation:SortingStyle" xmi:id="_eAnjwXCsEei11fv97AP7Vg"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_eAnjwnCsEei11fv97AP7Vg"/>
       </children>

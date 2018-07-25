@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:data="http://www.palladiosimulator.org/pcm/dataprocessing/data/0.1/" xmlns:dataprocessing="http://www.palladiosimulator.org/pcm/dataprocessing/0.1/" xmlns:emfprofileapplication="http://www.modelversioning.org/emfprofile/application/1.1" xmlns:processing="http://www.palladiosimulator.org/pcm/dataprocessing/processing/0.1/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xsi:schemaLocation="http://www.palladiosimulator.org/pcm/dataprocessing/data/0.1/ http://www.palladiosimulator.org/pcm/dataprocessing/0.1/#//data http://www.palladiosimulator.org/pcm/dataprocessing/processing/0.1/ http://www.palladiosimulator.org/pcm/dataprocessing/0.1/#//processing http://palladiosimulator.org/PalladioComponentModel/Repository/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//repository">
   <dataprocessing:DataSpecification>
-    <dataProcessingContainers id="_iJ8nAHPVEeinoOBpMH07LA" entityName="PickUpShop: CreateReport">
+    <dataProcessingContainers id="_iJ8nAHPVEeinoOBpMH07LA" entityName="PickUpShop.Inventory: CreateReport">
       <operations xsi:type="processing:PerformDataTransmissionOperation" id="_3EIRs3oGEeiCBNz7WZFmbw" entityName="PickUpShop.createReport">
         <inputMappings xsi:type="processing:DataParameterMapping" id="_2Bvq0HoKEeiCBNz7WZFmbw" data="_ZU5PEHQbEeinoOBpMH07LA">
           <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
         </inputMappings>
         <inputMappings xsi:type="processing:DataResultMapping" id="_nDA4s3ptEeiCBNz7WZFmbw" data="_0lmEIoUGEeiwX_rGX5ykig">
           <operation href="default.repository#_ZY2fsHCyEei11fv97AP7Vg"/>
-          <receivedData xsi:type="data:ResultBasedData" id="_6-anYoUGEeiwX_rGX5ykig" entityName="PickUpShop.resultdata"/>
+          <receivedData xsi:type="data:ResultBasedData" id="_6-anYoUGEeiwX_rGX5ykig" entityName="PickUpShop.resultdata">
+            <operation href="default.repository#_ZY2fsHCyEei11fv97AP7Vg"/>
+          </receivedData>
         </inputMappings>
       </operations>
     </dataProcessingContainers>
@@ -64,7 +66,7 @@
         </output>
       </operations>
     </dataProcessingContainers>
-    <dataSEFFSpecifications id="_VY-MEnQbEeinoOBpMH07LA" entityName="PickUpShop.createReport">
+    <dataSEFFSpecifications id="_VY-MEnQbEeinoOBpMH07LA" entityName="PickUpShop:Inventory.createReport">
       <inputData id="_ZU5PEHQbEeinoOBpMH07LA" entityName="PickUpShop.inputData_ID">
         <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
       </inputData>
