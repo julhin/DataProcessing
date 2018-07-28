@@ -34,7 +34,7 @@
         </resultingData>
       </operations>
     </dataProcessingContainers>
-    <dataProcessingContainers id="_nFUIoHQ0EeinoOBpMH07LA" entityName="Ts:Inv:App: CreateReport">
+    <dataProcessingContainers id="_nFUIoHQ0EeinoOBpMH07LA" entityName="Ts:Inv:App_transferData">
       <operations xsi:type="processing:PerformDataTransmissionOperation" id="_WI_7I3oLEeiCBNz7WZFmbw" entityName="TS::inv:app.createReport">
         <inputMappings xsi:type="processing:DataParameterMapping" id="_ZvsVAHoLEeiCBNz7WZFmbw" data="_pEoDEHQ2EeinoOBpMH07LA">
           <parameter href="default.repository#/0/@interfaces__Repository.2/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>

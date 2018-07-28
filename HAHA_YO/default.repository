@@ -24,18 +24,17 @@
       <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_FRsPEHCwEei11fv97AP7Vg" entityName="Provided_IStoreQuery_Tradingssystem::inventory:data" providedInterface__OperationProvidedRole="_eAlukHCsEei11fv97AP7Vg"/>
       <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_I8iwMHCwEei11fv97AP7Vg" entityName="Required_ServiceAdapter" requiredInterface__OperationRequiredRole="_eEewEHCsEei11fv97AP7Vg"/>
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_O777QHC6Eei11fv97AP7Vg" describedService__SEFF="_DevUoHC5Eei11fv97AP7Vg">
-        <steps_Behaviour xsi:type="seff:StartAction" id="_PoQOsHC6Eei11fv97AP7Vg" entityName="StartTsInvData" successor_AbstractAction="_JDgWLIoSEei-urmb0SU48A"/>
-        <steps_Behaviour xsi:type="seff:StopAction" id="_PoQ1wHC6Eei11fv97AP7Vg" entityName="StopTsInvData" predecessor_AbstractAction="_JDgWLIoSEei-urmb0SU48A"/>
-        <steps_Behaviour xsi:type="seff:InternalAction" id="_JDgWLIoSEei-urmb0SU48A" entityName="TS:inv:data_extractData" predecessor_AbstractAction="_PoQOsHC6Eei11fv97AP7Vg" successor_AbstractAction="_PoQ1wHC6Eei11fv97AP7Vg"/>
+        <steps_Behaviour xsi:type="seff:StartAction" id="_PoQOsHC6Eei11fv97AP7Vg" entityName="StartTsInvData"/>
+        <steps_Behaviour xsi:type="seff:StopAction" id="_PoQ1wHC6Eei11fv97AP7Vg" entityName="StopTsInvData"/>
+        <steps_Behaviour xsi:type="seff:InternalAction" id="_JDgWLIoSEei-urmb0SU48A" entityName="TS:inv:data_extractData"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
     <components__Repository xsi:type="repository:BasicComponent" id="_alWWwHCsEei11fv97AP7Vg" entityName="ServiceAdapter">
       <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_FwjVUHCwEei11fv97AP7Vg" entityName="Provided_ServiceAdapter" providedInterface__OperationProvidedRole="_eEewEHCsEei11fv97AP7Vg"/>
       <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_dNh8d3Q6EeinoOBpMH07LA">
-        <steps_Behaviour xsi:type="seff:StartAction" id="_7xspYnQ6EeinoOBpMH07LA" entityName="StartSA" successor_AbstractAction="_9dKsvHQ6EeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:InternalAction" id="_9dKsvHQ6EeinoOBpMH07LA" entityName="ServiceAdapter.executeQueryWithID" predecessor_AbstractAction="_7xspYnQ6EeinoOBpMH07LA" successor_AbstractAction="_8xAKQHQ6EeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:InternalAction" id="_2XKgDHnwEeiCBNz7WZFmbw" entityName="ServiceAdapter.executeQueryWithCustomer"/>
-        <steps_Behaviour xsi:type="seff:StopAction" id="_8xAKQHQ6EeinoOBpMH07LA" entityName="StopSA" predecessor_AbstractAction="_9dKsvHQ6EeinoOBpMH07LA"/>
+        <steps_Behaviour xsi:type="seff:StartAction" id="_7xspYnQ6EeinoOBpMH07LA" entityName="StartSA" successor_AbstractAction="_iNoXDJI7EeinS_OUOHb5EA"/>
+        <steps_Behaviour xsi:type="seff:StopAction" id="_8xAKQHQ6EeinoOBpMH07LA" entityName="StopSA" predecessor_AbstractAction="_iNoXDJI7EeinS_OUOHb5EA"/>
+        <steps_Behaviour xsi:type="seff:InternalAction" id="_iNoXDJI7EeinS_OUOHb5EA" entityName="ServiceAdapter.selectDB" predecessor_AbstractAction="_7xspYnQ6EeinoOBpMH07LA" successor_AbstractAction="_8xAKQHQ6EeinoOBpMH07LA"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
     <components__Repository xsi:type="repository:BasicComponent" id="_a1V6kHCsEei11fv97AP7Vg" entityName="Webservice::Inventory">
@@ -151,7 +150,7 @@
     <stereotypeApplications xsi:type="dataProcessingProfile:DataSeffSpecification" appliedTo="_dNh8d3Q6EeinoOBpMH07LA">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lbblZXUTEeiqCpXRWXhBJA"/>
     </stereotypeApplications>
-    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_9dKsvHQ6EeinoOBpMH07LA">
+    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_aMwywHQ9EeinoOBpMH07LA"/>
     </stereotypeApplications>
@@ -159,7 +158,7 @@
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_wvqY8HQyEeinoOBpMH07LA"/>
     </stereotypeApplications>
-    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_2XKgDHnwEeiCBNz7WZFmbw">
+    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_GGwkXHrAEeiupO6CqRqSzw">
@@ -188,6 +187,13 @@
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_DlOdpnQbEeinoOBpMH07LA">
       <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VXUTEeiqCpXRWXhBJA"/>
       <dataProcessingContainer href="DataSpecification.xmi#_iJ8nAHPVEeinoOBpMH07LA"/>
+    </stereotypeApplications>
+    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification">
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
+    </stereotypeApplications>
+    <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification" appliedTo="_iNoXDJI7EeinS_OUOHb5EA">
+      <extension href="../org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram#_lba-VHUTEeiqCpXRWXhBJA"/>
+      <dataProcessingContainer href="DataSpecification.xmi#_aMwywHQ9EeinoOBpMH07LA"/>
     </stereotypeApplications>
     <importedProfiles nsURI="http://www.palladiosimulator.org/pcm/dataprocessing/profile/0.1/" location="platform:/plugin/org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram"/>
     <importedProfiles nsURI="http://edu.kit.kastel.scbs/pcmconfidentialityprofile" location="platform:/plugin/edu.kit.kastel.scbs.pcmconfidentialityprofile/confidentiality.emfprofile_diagram"/>
