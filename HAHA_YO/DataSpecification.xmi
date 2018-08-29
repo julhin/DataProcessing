@@ -28,7 +28,7 @@
       </operations>
     </dataProcessingContainers>
     <dataProcessingContainers id="_wvqY8HQyEeinoOBpMH07LA" entityName="Ts:Inv:App_Assemble">
-      <operations xsi:type="processing:CreateDataOperation" id="_2_XNQINYEeiZU6L_PsRjfw" entityName="TS:inv:app.assembleReport_createdata">
+      <operations xsi:type="processing:JoinDataOperation" id="_HTS716uHEeiay-ISUtCHVQ" entityName="TS:inv:app.assemblereport" consumedData="_2xdMAooaEei-urmb0SU48A">
         <resultingData xsi:type="data:DerivedData" id="_KbQl04PIEeiCnIAGaZM9cg" entityName="TS:inv:app.assembleReport_Report" sources="_2xdMAooaEei-urmb0SU48A">
           <resultingDataType xsi:type="repository:CollectionDataType" href="default.repository#_yrJzHHQjEeinoOBpMH07LA"/>
         </resultingData>
@@ -66,6 +66,24 @@
         </output>
       </operations>
     </dataProcessingContainers>
+    <characteristicTypeContainers id="_XmY6YauIEeiay-ISUtCHVQ">
+      <characteristicTypes xsi:type="characteristics:EnumCharacteristicType" id="_YVbKoKuIEeiay-ISUtCHVQ" entityName="charEnumType.system" enum="_aCYbsauIEeiay-ISUtCHVQ"/>
+      <enumerations id="_aCYbsauIEeiay-ISUtCHVQ" entityName="charEnum.system">
+        <literals id="_yyhUgKuIEeiay-ISUtCHVQ" entityName="systemRights"/>
+      </enumerations>
+    </characteristicTypeContainers>
+    <characteristicTypeContainers id="_-eqLg6uIEeiay-ISUtCHVQ">
+      <characteristicTypes xsi:type="characteristics:EnumCharacteristicType" id="_As8A8KuJEeiay-ISUtCHVQ" entityName="charEnumType.allowed" enum="_BPyPUauJEeiay-ISUtCHVQ"/>
+      <enumerations id="_BPyPUauJEeiay-ISUtCHVQ" entityName="charEnum.allowed">
+        <literals id="_Egmf0KuJEeiay-ISUtCHVQ" entityName="allowed"/>
+      </enumerations>
+    </characteristicTypeContainers>
+    <characteristicTypeContainers id="__M3VU6uIEeiay-ISUtCHVQ">
+      <characteristicTypes xsi:type="characteristics:EnumCharacteristicType" id="_HB1tgKuJEeiay-ISUtCHVQ" entityName="charEnumType.denied" enum="_ID9R0auJEeiay-ISUtCHVQ"/>
+      <enumerations id="_ID9R0auJEeiay-ISUtCHVQ" entityName="charEnum.denied">
+        <literals id="_KwUxcKuJEeiay-ISUtCHVQ" entityName="denied"/>
+      </enumerations>
+    </characteristicTypeContainers>
     <dataSEFFSpecifications id="_VY-MEnQbEeinoOBpMH07LA" entityName="PickUpShop:Inventory.createReport">
       <inputData id="_ZU5PEHQbEeinoOBpMH07LA" entityName="PickUpShop.inputData_ID">
         <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
@@ -90,13 +108,13 @@
       </stores>
     </storeContainers>
     <characteristicContainer id="_j8qhFKtoEeirUesg_GcfaQ" entityName="char.allowed">
-      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_lEUFoKtoEeirUesg_GcfaQ"/>
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_lEUFoKtoEeirUesg_GcfaQ" characteristicType="_As8A8KuJEeiay-ISUtCHVQ" literals="_Egmf0KuJEeiay-ISUtCHVQ"/>
     </characteristicContainer>
     <characteristicContainer id="_jxnnVatrEeirUesg_GcfaQ" entityName="char.system">
-      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_mOX9oKtrEeirUesg_GcfaQ"/>
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_mOX9oKtrEeirUesg_GcfaQ" characteristicType="_YVbKoKuIEeiay-ISUtCHVQ" literals="_yyhUgKuIEeiay-ISUtCHVQ"/>
     </characteristicContainer>
     <characteristicContainer id="_vFFxlatpEeirUesg_GcfaQ" entityName="char.denied">
-      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_xMJksKtpEeirUesg_GcfaQ"/>
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_xMJksKtpEeirUesg_GcfaQ" characteristicType="_HB1tgKuJEeiay-ISUtCHVQ" literals="_KwUxcKuJEeiay-ISUtCHVQ"/>
     </characteristicContainer>
     <relatedCharacteristics id="_nal8laXuEeivEJnFGpU1ig" entityName="DBEntries" characteristics="_jxnnVatrEeirUesg_GcfaQ">
       <relatedEntity xsi:type="repository:CollectionDataType" href="default.repository#_SR7kTIm0Eei-urmb0SU48A"/>
@@ -112,9 +130,6 @@
     </relatedCharacteristics>
     <relatedCharacteristics id="_FbcvlatqEeirUesg_GcfaQ" entityName="Customer.purchasedProducts" characteristics="_vFFxlatpEeirUesg_GcfaQ">
       <relatedEntity xsi:type="repository:CompositeDataType" href="default.repository#_rKAB3X7DEeiaS-Ue-vOVzA"/>
-    </relatedCharacteristics>
-    <relatedCharacteristics id="_71WYBatpEeirUesg_GcfaQ" entityName="query" characteristics="_jxnnVatrEeirUesg_GcfaQ">
-      <relatedEntity xsi:type="repository:CompositeDataType" href="default.repository#_ehhrHX-XEeiYVZcJd-4VXQ"/>
     </relatedCharacteristics>
     <relatedCharacteristics id="_w-TuhaXuEeivEJnFGpU1ig" entityName="Report" characteristics="_jxnnVatrEeirUesg_GcfaQ">
       <relatedEntity xsi:type="repository:CollectionDataType" href="default.repository#_yrJzHHQjEeinoOBpMH07LA"/>
