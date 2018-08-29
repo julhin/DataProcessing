@@ -95,7 +95,7 @@
       <innerDeclaration_CompositeDataType entityName="customer.id">
         <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
       </innerDeclaration_CompositeDataType>
-      <innerDeclaration_CompositeDataType entityName="customer.name">
+      <innerDeclaration_CompositeDataType entityName="customer.credentials">
         <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
       </innerDeclaration_CompositeDataType>
       <innerDeclaration_CompositeDataType entityName="customer.purchasedProducts" datatype_InnerDeclaration="_UxQVvHQkEeinoOBpMH07LA"/>
