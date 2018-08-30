@@ -21,16 +21,13 @@
         </inputMappings>
         <inputMappings xsi:type="processing:DataResultMapping" id="_fZeUc3ptEeiCBNz7WZFmbw" data="_KbQl04PIEeiCnIAGaZM9cg">
           <operation href="default.repository#_TZ4qEHC2Eei11fv97AP7Vg"/>
-          <receivedData xsi:type="data:ResultBasedData" id="_0lmEIoUGEeiwX_rGX5ykig" entityName="Webservice:Inv_resultdata">
-            <operation href="default.repository#_TZ4qEHC2Eei11fv97AP7Vg"/>
-          </receivedData>
         </inputMappings>
       </operations>
     </dataProcessingContainers>
     <dataProcessingContainers id="_wvqY8HQyEeinoOBpMH07LA" entityName="Ts:Inv:App_Assemble">
       <operations xsi:type="processing:JoinDataOperation" id="_HTS716uHEeiay-ISUtCHVQ" entityName="TS:inv:app.assemblereport" consumedData="_2xdMAooaEei-urmb0SU48A">
-        <resultingData xsi:type="data:DerivedData" id="_KbQl04PIEeiCnIAGaZM9cg" entityName="TS:inv:app.assembleReport_Report" sources="_2xdMAooaEei-urmb0SU48A">
-          <resultingDataType xsi:type="repository:CollectionDataType" href="default.repository#_yrJzHHQjEeinoOBpMH07LA"/>
+        <resultingData xsi:type="data:ResultBasedData" id="_0lmEIoUGEeiwX_rGX5ykig" entityName="Webservice:Inv_resultdata">
+          <operation href="default.repository#_TZ4qEHC2Eei11fv97AP7Vg"/>
         </resultingData>
       </operations>
     </dataProcessingContainers>
