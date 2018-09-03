@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataProcessingProfile="http://www.palladiosimulator.org/pcm/dataprocessing/profile/0.1/" xmlns:edu.kit.kastel.scbs.pcmconfidentialityprofile="http://edu.kit.kastel.scbs/pcmconfidentialityprofile" xmlns:emfprofileapplication="http://www.modelversioning.org/emfprofile/application/1.1" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2">
   <repository:Repository id="_hr8KUGkqEei4C4nWQmUvDw" entityName="defaultRepository">
-    <components__Repository xsi:type="repository:BasicComponent" id="_ZQv7UHCsEei11fv97AP7Vg" entityName="PickupShop:Inventory">
-      <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_DkuW8HCwEei11fv97AP7Vg" entityName="Provided_IStockManagerInterface_PickupShop" providedInterface__OperationProvidedRole="_dySM0HCsEei11fv97AP7Vg"/>
+    <components__Repository xsi:type="repository:BasicComponent" id="_ZQv7UHCsEei11fv97AP7Vg" entityName="Webfrontned">
+      <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_DkuW8HCwEei11fv97AP7Vg" entityName="Provided_IStockManagerInterface_PickupShop"/>
       <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_GwPQsHCwEei11fv97AP7Vg" entityName="Required_IStoreManager_Webservice" requiredInterface__OperationRequiredRole="_d2vPAHCsEei11fv97AP7Vg"/>
-      <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_WyKwR3PyEeinoOBpMH07LA" describedService__SEFF="_ZY2fsHCyEei11fv97AP7Vg">
+      <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_WyKwR3PyEeinoOBpMH07LA">
         <steps_Behaviour xsi:type="seff:StartAction" id="_CePncnQbEeinoOBpMH07LA" entityName="StartPickUpShop" successor_AbstractAction="_DlOdpnQbEeinoOBpMH07LA"/>
-        <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_DlOdpnQbEeinoOBpMH07LA" entityName="PickupShop.createReport" predecessor_AbstractAction="_CePncnQbEeinoOBpMH07LA" successor_AbstractAction="_DAicMHQbEeinoOBpMH07LA" calledService_ExternalService="_ZY2fsHCyEei11fv97AP7Vg"/>
+        <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_DlOdpnQbEeinoOBpMH07LA" entityName="PickupShop.createReport" predecessor_AbstractAction="_CePncnQbEeinoOBpMH07LA" successor_AbstractAction="_DAicMHQbEeinoOBpMH07LA" role_ExternalService="_GwPQsHCwEei11fv97AP7Vg"/>
         <steps_Behaviour xsi:type="seff:StopAction" id="_DAicMHQbEeinoOBpMH07LA" entityName="EndPickUpShop" predecessor_AbstractAction="_DlOdpnQbEeinoOBpMH07LA"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
@@ -46,12 +46,16 @@
         <steps_Behaviour xsi:type="seff:StopAction" id="_3d-JAHP7EeinoOBpMH07LA" entityName="StopWeb" predecessor_AbstractAction="_GGwkXHrAEeiupO6CqRqSzw"/>
       </serviceEffectSpecifications__BasicComponent>
     </components__Repository>
-    <interfaces__Repository xsi:type="repository:OperationInterface" id="_dySM0HCsEei11fv97AP7Vg" entityName="IInventory">
-      <signatures__OperationInterface id="_ZY2fsHCyEei11fv97AP7Vg" entityName="IInventory.createReport" returnType__OperationSignature="_yrJzHHQjEeinoOBpMH07LA">
-        <parameters__OperationSignature parameterName="StockmanagerInterface.id">
+    <interfaces__Repository xsi:type="repository:OperationInterface" id="_eEewEHCsEei11fv97AP7Vg" entityName="ServiceAdapter">
+      <signatures__OperationInterface id="_J_OmIHC5Eei11fv97AP7Vg" entityName="ServiceAdapter.executeQueryCustomerOrders" returnType__OperationSignature="_UxQVvHQkEeinoOBpMH07LA">
+        <parameters__OperationSignature dataType__Parameter="_rKAB3X7DEeiaS-Ue-vOVzA" parameterName=" ServiceAdapter.customer"/>
+      </signatures__OperationInterface>
+      <signatures__OperationInterface id="_rbNjIHQ6EeinoOBpMH07LA" entityName="ServiceAdapter.executeQueryCustomerID" returnType__OperationSignature="_rKAB3X7DEeiaS-Ue-vOVzA">
+        <parameters__OperationSignature parameterName="ServiceAdapter.id">
           <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
         </parameters__OperationSignature>
       </signatures__OperationInterface>
+      <signatures__OperationInterface id="_LXKKgIm0Eei-urmb0SU48A" entityName="Serviceadapter.selectCompleteDatabase" returnType__OperationSignature="_Yc12rHQkEeinoOBpMH07LA"/>
     </interfaces__Repository>
     <interfaces__Repository xsi:type="repository:OperationInterface" id="_d2vPAHCsEei11fv97AP7Vg" entityName="IStoreManager">
       <signatures__OperationInterface id="_TZ4qEHC2Eei11fv97AP7Vg" entityName="IStoreManager.createReport">
@@ -73,17 +77,6 @@
           <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
         </parameters__OperationSignature>
       </signatures__OperationInterface>
-    </interfaces__Repository>
-    <interfaces__Repository xsi:type="repository:OperationInterface" id="_eEewEHCsEei11fv97AP7Vg" entityName="ServiceAdapter">
-      <signatures__OperationInterface id="_J_OmIHC5Eei11fv97AP7Vg" entityName="ServiceAdapter.executeQueryCustomerOrders" returnType__OperationSignature="_UxQVvHQkEeinoOBpMH07LA">
-        <parameters__OperationSignature dataType__Parameter="_rKAB3X7DEeiaS-Ue-vOVzA" parameterName=" ServiceAdapter.customer"/>
-      </signatures__OperationInterface>
-      <signatures__OperationInterface id="_rbNjIHQ6EeinoOBpMH07LA" entityName="ServiceAdapter.executeQueryCustomerID" returnType__OperationSignature="_rKAB3X7DEeiaS-Ue-vOVzA">
-        <parameters__OperationSignature parameterName="ServiceAdapter.id">
-          <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
-        </parameters__OperationSignature>
-      </signatures__OperationInterface>
-      <signatures__OperationInterface id="_LXKKgIm0Eei-urmb0SU48A" entityName="Serviceadapter.selectCompleteDatabase" returnType__OperationSignature="_Yc12rHQkEeinoOBpMH07LA"/>
     </interfaces__Repository>
     <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_yrJzHHQjEeinoOBpMH07LA" entityName="Report">
       <innerType_CollectionDataType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
@@ -174,7 +167,7 @@
     <stereotypeApplications xsi:type="edu.kit.kastel.scbs.pcmconfidentialityprofile:InformationFlowParameter" appliedTo="_TZ4qEHC2Eei11fv97AP7Vg">
       <extension href="../../plugin/edu.kit.kastel.scbs.pcmconfidentialityprofile/confidentiality.emfprofile_diagram#_frmBgDF1EeaZ1ISuff6-rA"/>
     </stereotypeApplications>
-    <stereotypeApplications xsi:type="edu.kit.kastel.scbs.pcmconfidentialityprofile:InformationFlow" appliedTo="_ZY2fsHCyEei11fv97AP7Vg">
+    <stereotypeApplications xsi:type="edu.kit.kastel.scbs.pcmconfidentialityprofile:InformationFlow">
       <extension href="../../plugin/edu.kit.kastel.scbs.pcmconfidentialityprofile/confidentiality.emfprofile_diagram#_g1JGUJnREeWvVMHOHv3ROA"/>
     </stereotypeApplications>
     <stereotypeApplications xsi:type="dataProcessingProfile:DataProcessingSpecification">

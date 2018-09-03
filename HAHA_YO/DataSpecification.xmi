@@ -3,14 +3,9 @@
   <dataprocessing:DataSpecification>
     <dataProcessingContainers id="_iJ8nAHPVEeinoOBpMH07LA" entityName="PickUpShop.Inventory: CreateReport">
       <operations xsi:type="processing:PerformDataTransmissionOperation" id="_3EIRs3oGEeiCBNz7WZFmbw" entityName="PickUpShop.createReport">
-        <inputMappings xsi:type="processing:DataParameterMapping" id="_2Bvq0HoKEeiCBNz7WZFmbw" data="_ZU5PEHQbEeinoOBpMH07LA">
-          <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
-        </inputMappings>
+        <inputMappings xsi:type="processing:DataParameterMapping" id="_2Bvq0HoKEeiCBNz7WZFmbw" data="_ZU5PEHQbEeinoOBpMH07LA"/>
         <inputMappings xsi:type="processing:DataResultMapping" id="_nDA4s3ptEeiCBNz7WZFmbw" data="_0lmEIoUGEeiwX_rGX5ykig">
-          <operation href="default.repository#_ZY2fsHCyEei11fv97AP7Vg"/>
-          <receivedData xsi:type="data:ResultBasedData" id="_6-anYoUGEeiwX_rGX5ykig" entityName="PickUpShop.resultdata">
-            <operation href="default.repository#_ZY2fsHCyEei11fv97AP7Vg"/>
-          </receivedData>
+          <receivedData xsi:type="data:ResultBasedData" id="_6-anYoUGEeiwX_rGX5ykig" entityName="PickUpShop.resultdata"/>
         </inputMappings>
       </operations>
     </dataProcessingContainers>
@@ -18,9 +13,6 @@
       <operations xsi:type="processing:PerformDataTransmissionOperation" id="_9RNiM3oKEeiCBNz7WZFmbw" entityName="Webservice:Inventory.createReport">
         <inputMappings xsi:type="processing:DataParameterMapping" id="_DDpa4HoLEeiCBNz7WZFmbw" data="_o_774HQsEeinoOBpMH07LA">
           <parameter href="default.repository#/0/@interfaces__Repository.1/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
-        </inputMappings>
-        <inputMappings xsi:type="processing:DataResultMapping" id="_fZeUc3ptEeiCBNz7WZFmbw" data="_KbQl04PIEeiCnIAGaZM9cg">
-          <operation href="default.repository#_TZ4qEHC2Eei11fv97AP7Vg"/>
         </inputMappings>
       </operations>
     </dataProcessingContainers>
@@ -53,7 +45,7 @@
     </dataProcessingContainers>
     <dataProcessingContainers id="_H1pBMInYEei-urmb0SU48A" entityName="TS:inv:data_extractData">
       <operations xsi:type="processing:SelectionDataOperation" id="_QNHvGYoQEei-urmb0SU48A" entityName="SelectCustomers" inputs="_I3itcom0Eei-urmb0SU48A" parameterData="_zSMj8ILUEeiX9-UWTLrU2A">
-        <output xsi:type="data:ResultBasedData" id="_iqDgQooXEei-urmb0SU48A" entityName="TS:inv:data_DatabaseEntriesCustomers">
+        <output xsi:type="data:ResultBasedData" id="_iqDgQooXEei-urmb0SU48A" entityName="TS:inv:data_SelectCustomers">
           <operation href="default.repository#_DevUoHC5Eei11fv97AP7Vg"/>
         </output>
       </operations>
@@ -82,9 +74,7 @@
       </enumerations>
     </characteristicTypeContainers>
     <dataSEFFSpecifications id="_VY-MEnQbEeinoOBpMH07LA" entityName="PickUpShop:Inventory.createReport">
-      <inputData id="_ZU5PEHQbEeinoOBpMH07LA" entityName="PickUpShop.inputData_ID">
-        <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
-      </inputData>
+      <inputData id="_ZU5PEHQbEeinoOBpMH07LA" entityName="PickUpShop.inputData_ID"/>
     </dataSEFFSpecifications>
     <dataSEFFSpecifications id="_lBODknQsEeinoOBpMH07LA" entityName="Webservice::Inventory.createReport">
       <inputData id="_o_774HQsEeinoOBpMH07LA" entityName="Webservice::Inventory.inputData_ID">
